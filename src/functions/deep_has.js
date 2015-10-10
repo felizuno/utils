@@ -1,5 +1,8 @@
-module.exports = {
+{
   name: 'Deep Has',
+  author: 'Kevin Ewing',
+  client: true,
+  node: true,
   func: function(src, accessString) {
     return accessString
       .replace(/\[/g, '.') // can these two replaces be done with a regex
@@ -33,4 +36,4 @@ module.exports = {
       return this.func(stubs.src3, '[0].first.second[0].third') === 1;
     },
   ]
-}
+};
